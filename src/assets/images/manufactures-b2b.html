@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Agro</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="SidenavArea">
+      <div class="SidenavHead">
+        <figure><img src="images/Logo.png" /></figure>
+        <!-- <h4>Bob Hyden <span>Administrator</span></h4> -->
+      </div>
+
+      <div class="SidenavBody">
+        <ul>
+          <li>
+            <a href="dashboard.html">
+              <span class="Icon"><i class="fa fa-tachometer"></i></span>
+              <span class="Text">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="dropdown active">
+            <a
+              href="javascript:void(0)"
+              id="navbardrop"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="Icon"><i class="fa fa-font"></i></span>
+              <span class="Text">User Management</span>
+            </a>
+            <ol class="dropdown-menu">
+              <li>
+                <a href="farmers.html">Farmers</a>
+              </li>
+              <li>
+                <a href="online-service-providers.html"
+                  >Online Service Providers</a
+                >
+              </li>
+              <li class="active">
+                <a href="manufactures-b2b.html">Manufacturers B2B</a>
+              </li>
+
+              <li>
+                <a href="advertisers.html">Advertisement</a>
+              </li>
+            </ol>
+          </li>
+
+          <li>
+            <a href="subscriptions.html">
+              <span class="Icon"><i class="fa fa-file-image-o"></i></span>
+              <span class="Text">Subscriptions</span>
+            </a>
+          </li>
+          <li>
+            <a href="services-category.html">
+              <span class="Icon"><i class="fa fa-bell-o"></i></span>
+              <span class="Text">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="static-content.html">
+              <span class="Icon"><i class="fa fa-file"></i></span>
+              <span class="Text">Static Content</span>
+            </a>
+          </li>
+          <li>
+            <a href="chats-management.html">
+              <span class="Icon"><i class="fa fa-file-text"></i></span>
+              <span class="Text">Chats Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="complaints.html">
+              <span class="Icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="Text">Complaints Management</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="commission-management.html">
+              <span class="Icon"
+                ><i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <span class="Text">Commission Management</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="sub-admins-management.html">
+              <span class="Icon"><i class="fa fa-file-image-o"></i></span>
+              <span class="Text">Sub Admins Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="Reports.html">
+              <span class="Icon"><i class="fa fa-file-text"></i></span>
+              <span class="Text">Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="notifications.html">
+              <span class="Icon"><i class="fa fa-bell-o"></i></span>
+              <span class="Text">Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="Icon"
+                ><i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <span class="Text">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="modal" data-target="#LogoutModal">
+              <span class="Icon"><i class="fa fa-sign-out"></i> </span>
+              <span class="Text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="WrapperArea">
+      <div class="WrapperBox">
+        <div class="TitleBox">
+          <h4 class="Title">manufacturers B2B</h4>
+        </div>
+        <!-- ------------------------------------------------ -->
+
+        <div class="CommonTabs">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#IM"
+                >IndiaMart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#JD">Just Dial</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="IM">
+            <div class="TitleBox">
+              <!-- <h4 class="Title">IndiaMart</h4> -->
+            </div>
+
+            <div class="Small-Wrapper">
+              <div class="FilterArea">
+                <div class="FilterLeft">
+                  <div class="form-group">
+                    <label>Search</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search here"
+                    />
+                  </div>
+                  <!-- <div class="form-group">
+                                <label>From Date</label>
+                                <input type="date" class="form-control">
+                            </div> 
+                            <div class="form-group">
+                                <label>To Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="Button">Apply</button>
+                                <button class="Button Cancel"><i class="fa fa-refresh"></i></button>
+                            </div> -->
+                </div>
+                <div class="FilterRight">
+                  <div class="form-group">
+                    <label>Sort</label>
+                    <select class="form-control">
+                      <option>Active Users</option>
+                      <option>Deactivated Users</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>&nbsp;</label>
+                    <a href="#" class="Button" download="">
+                      <span class="download"
+                        ><img src="images/download.png" alt=""
+                      /></span>
+                      Export CSV
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="TableList">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Manufacturer Name</th>
+                      <th>Phone Number</th>
+                      <th>Business Name</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="Im-services.html">Ravi Kumar</a></td>
+                      <td>+91 9988776655</td>
+                      <td>AgroTech Industries</td>
+                      <td><span class="Green">Active</span></td>
+                      <td>
+                        <div class="Actions">
+                          <a class="Green" href="">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                          </a>
+                          <a
+                            class="Red"
+                            data-toggle="modal"
+                            data-target="#DeleteModal"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="PaginationBox">
+                <div class="PaginationLeft">
+                  <p>Total Records : <span>200</span></p>
+                </div>
+                <div class="PaginationRight">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-left"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-left"></i
+                      ></a>
+                    </li>
+                    <li class="active">
+                      <a href="javascript:void(0);">1</a>
+                    </li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-right"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="JD">
+            <div class="TitleBox">
+              <!-- <h4 class="Title">Just Dial</h4> -->
+            </div>
+
+            <div class="Small-Wrapper">
+              <div class="FilterArea">
+                <div class="FilterLeft">
+                  <div class="form-group">
+                    <label>Search</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search here"
+                    />
+                  </div>
+                  <!-- <div class="form-group">
+                                <label>From Date</label>
+                                <input type="date" class="form-control">
+                            </div> 
+                            <div class="form-group">
+                                <label>To Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="Button">Apply</button>
+                                <button class="Button Cancel"><i class="fa fa-refresh"></i></button>
+                            </div> -->
+                </div>
+                <div class="FilterRight">
+                  <div class="form-group">
+                    <label>Sort</label>
+                    <select class="form-control">
+                      <option>Active Users</option>
+                      <option>Deactivated Users</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label>&nbsp;</label>
+                    <a href="#" class="Button" download="">
+                      <span class="download"
+                        ><img src="images/download.png" alt=""
+                      /></span>
+                      Export CSV
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="TableList">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Business Name</th>
+                      <th>Contact Person</th>
+                      <th>Email</th>
+                      <th>Phone Number</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="JD-Business-Services.html"
+                          >AgroTech Industries</a
+                        >
+                      </td>
+                      <td>Ravi Kumar</td>
+                      <td>ravi@agrotech.com</td>
+                      <td>+91 9988776655</td>
+                      <td>Delhi</td>
+
+                      <td><span class="Green">Active</span></td>
+                      <td>
+                        <div class="Actions">
+                          <a class="Green" href="">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                          </a>
+                          <a
+                            class="Red"
+                            data-toggle="modal"
+                            data-target="#DeleteModal"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="PaginationBox">
+                <div class="PaginationLeft">
+                  <p>Total Records : <span>200</span></p>
+                </div>
+                <div class="PaginationRight">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-left"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-left"></i
+                      ></a>
+                    </li>
+                    <li class="active">
+                      <a href="javascript:void(0);">1</a>
+                    </li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-right"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-right"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------------------------------------------------- -->
+      </div>
+    </div>
+
+    <div class="ModalBox">
+      <div id="LogoutModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="Decline">
+                <a
+                  href="javascript:void(0);"
+                  class="CloseModal"
+                  data-dismiss="modal"
+                  >×</a
+                >
+                <h3>Logout</h3>
+                <p>Are you sure you want to log out?</p>
+                <h4>
+                  <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                  <a href="login.html">Yes</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ModalBox">
+      <div id="DeleteModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="Decline">
+                <a
+                  href="javascript:void(0);"
+                  class="CloseModal"
+                  data-dismiss="modal"
+                  >×</a
+                >
+                <h3>Delete</h3>
+                <p>Are you sure you want to delete  Subscription?</p>
+                <h4>
+                  <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                  <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Agro</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="SidenavArea">
+      <div class="SidenavHead">
+        <figure><img src="images/Logo.png" /></figure>
+        <!-- <h4>Bob Hyden <span>Administrator</span></h4> -->
+      </div>
+
+      <div class="SidenavBody">
+        <ul>
+          <li>
+            <a href="dashboard.html">
+              <span class="Icon"><i class="fa fa-tachometer"></i></span>
+              <span class="Text">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="dropdown active">
+            <a
+              href="javascript:void(0)"
+              id="navbardrop"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="Icon"><i class="fa fa-font"></i></span>
+              <span class="Text">User Management</span>
+            </a>
+            <ol class="dropdown-menu">
+              <li>
+                <a href="farmers.html">Farmers</a>
+              </li>
+              <li>
+                <a href="online-service-providers.html"
+                  >Online Service Providers</a
+                >
+              </li>
+              <li class="active">
+                <a href="manufactures-b2b.html">Manufacturers B2B</a>
+              </li>
+
+              <li>
+                <a href="advertisers.html">Advertisement</a>
+              </li>
+            </ol>
+          </li>
+
+          <li>
+            <a href="subscriptions.html">
+              <span class="Icon"><i class="fa fa-file-image-o"></i></span>
+              <span class="Text">Subscriptions</span>
+            </a>
+          </li>
+          <li>
+            <a href="services-category.html">
+              <span class="Icon"><i class="fa fa-bell-o"></i></span>
+              <span class="Text">Services</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="static-content.html">
+              <span class="Icon"><i class="fa fa-file"></i></span>
+              <span class="Text">Static Content</span>
+            </a>
+          </li>
+          <li>
+            <a href="chats-management.html">
+              <span class="Icon"><i class="fa fa-file-text"></i></span>
+              <span class="Text">Chats Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="complaints.html">
+              <span class="Icon"><i class="fa fa-puzzle-piece"></i></span>
+              <span class="Text">Complaints Management</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="commission-management.html">
+              <span class="Icon"
+                ><i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <span class="Text">Commission Management</span>
+            </a>
+          </li> -->
+          <li>
+            <a href="sub-admins-management.html">
+              <span class="Icon"><i class="fa fa-file-image-o"></i></span>
+              <span class="Text">Sub Admins Management</span>
+            </a>
+          </li>
+          <li>
+            <a href="Reports.html">
+              <span class="Icon"><i class="fa fa-file-text"></i></span>
+              <span class="Text">Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="notifications.html">
+              <span class="Icon"><i class="fa fa-bell-o"></i></span>
+              <span class="Text">Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <span class="Icon"
+                ><i class="fa fa-user" aria-hidden="true"></i>
+              </span>
+              <span class="Text">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a data-toggle="modal" data-target="#LogoutModal">
+              <span class="Icon"><i class="fa fa-sign-out"></i> </span>
+              <span class="Text">Logout</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="WrapperArea jd-buisness-service">
+      <div class="WrapperBox">
+        <div class="TitleBox">
+          <h4 class="Title">Services</h4>
+        </div>
+
+        <div class="CommonTabs">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                data-toggle="tab"
+                href="#serivces-personalDetails"
+                >Personal Details</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#serivces-product-details"
+                >Product Details
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#serivces-enquries"
+                >Enquiries</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-toggle="tab"
+                href="#serivces-Advertisments"
+                >Advertisements</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane fade active show" id="serivces-personalDetails">
+            <div class="Small-Wrapper pb-0">
+              <div class="AdminActivity">
+                <ul>
+                  <li>
+                    <!-- <h4>Simmi Sharma</h4> -->
+
+                    <p>
+                      <span class="heading-divide">
+                        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                        Personal Details</span
+                      >
+                    </p>
+
+                    <p>
+                      <label>Name : </label>
+                      <span>Ravi Kumar</span>
+                    </p>
+                    <p>
+                      <label>Phone Number : </label>
+                      <span>+91 9988776655</span>
+                    </p>
+
+                    <p>
+                      <span class="heading-divide">
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+
+                        Business Details</span
+                      >
+                    </p>
+
+                    <p>
+                      <label>Business/shop/Company Name : </label>
+                      <span>Agro Tech Ltd.</span>
+                    </p>
+                    <p>
+                      <label>Businesss E-mail: </label>
+                      <span>Ravi@agrotech.com</span>
+                    </p>
+                    <p>
+                      <label>GST-PAN Number : </label>
+                      <span>GSTBN12383HJ990</span>
+                    </p>
+                    <p>
+                      <label>Address : </label>
+                      <span>H-147, Noida</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="serivces-product-details">
+            <div class="Small-Wrapper">
+              <div class="TitleBox">
+                <h4 class="Title">Products</h4>
+              </div>
+              <div class="FilterArea">
+                <div class="FilterLeft">
+                  <div class="form-group">
+                    <label>Search</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search here"
+                    />
+                  </div>
+                  <!-- <div class="form-group">
+                                <label>From Date</label>
+                                <input type="date" class="form-control">
+                            </div> 
+                            <div class="form-group">
+                                <label>To Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <button class="Button">Apply</button>
+                                <button class="Button Cancel"><i class="fa fa-refresh"></i></button>
+                            </div> -->
+                </div>
+                <div class="FilterRight">
+                  <div class="form-group">
+                    <label>Sort</label>
+                    <select class="form-control">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                  </div>
+                  <!-- <div class="form-group v-hide">
+                    <label>Users</label>
+                    <select class="form-control">
+                      <option>IM</option>
+                      <option>JD</option>
+                      <option>B2B</option>
+                      <option>Non Registered</option>
+                    </select>
+                  </div> -->
+                </div>
+              </div>
+              <div class="TableList">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Product Name</th>
+                      <th>Service Category</th>
+                      <th>Enquiries</th>
+                      <th>Actions</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="Im-product-details.html"> PowerTrac 500</a>
+                      </td>
+                      <td>
+                        Land Mangement Services - Tractors - based services
+                      </td>
+                      <td>18</td>
+                      <td><span class="Green">Active</span></td>
+                      <td>
+                        <div class="Actions">
+                          <a class="Green" href="">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                          </a>
+                          <a
+                            class="Red"
+                            data-toggle="modal"
+                            data-target="#Delete-jd-enquiry"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="PaginationBox">
+                <div class="PaginationRight">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-left"></i> first</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-left"></i> previous</a
+                      >
+                    </li>
+                    <li class="active"><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        next <i class="fa fa-angle-right"> </i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        last <i class="fa fa-angle-double-right"> </i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="PaginationLeft">
+                  <div class="form-group">
+                    <select name="" id="">
+                      <option value="">10</option>
+                      <option value="">20</option>
+                      <option value="">30</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="serivces-enquries">
+            <div class="Small-Wrapper">
+              <div class="TitleBox">
+                <h4 class="Title">Enquiries</h4>
+              </div>
+              <div class="FilterArea">
+                <div class="FilterLeft">
+                  <div class="form-group">
+                    <label>Search</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search here"
+                    />
+                  </div>
+                  <!-- <div class="form-group">
+                    <label>Sort By</label>
+                    <select class="form-control">
+                      <option>Active Locations</option>
+                      <option>Inactive Locations</option>
+                      <option>Both</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Filter By Status</label>
+                    <select class="form-control">
+                      <option>On Hold</option>
+                      <option>Started</option>
+                      <option>Inprogress</option>
+                      <option>Completed</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>&nbsp;</label>
+                    <button class="Button">Apply</button>
+                    <button class="Button Cancel">
+                      <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </button>
+                  </div> -->
+                </div>
+              </div>
+              <div class="TableList">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Grievance ID</th>
+                      <th>Farmer Name</th>
+                      <th>Service Category</th>
+                      <th>Product Name</th>
+                      <th>Farm Location</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>GRV001</td>
+                      <td>
+                        <a href="Im-enquiry-details.html">Ramesh Kumar</a>
+                      </td>
+                      <td>Land Management Services -Tractor-based Servcies</td>
+                      <td>PowerTrac 550</td>
+                      <td>Patna, Bihar</td>
+                      <td>
+                        <span class="Blue">In Progress</span>
+                      </td>
+                      <td>
+                        <div class="Actions">
+                          <a class="Green" href="">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                          </a>
+                          <a
+                            class="Red"
+                            data-toggle="modal"
+                            data-target="#Delete-jd-enquiry"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>GRV001</td>
+                      <td>
+                        <a href="Im-enquiry-details.html">Ramesh Kumar</a>
+                      </td>
+                      <td>Land Management Services -Tractor-based Servcies</td>
+                      <td>PowerTrac 550</td>
+                      <td>Patna, Bihar</td>
+                      <td>
+                        <span class="Red">Completed</span>
+                      </td>
+                      <td>
+                        <div class="Actions">
+                          <a class="Green" href="">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                          </a>
+                          <a
+                            class="Red"
+                            data-toggle="modal"
+                            data-target="#DeleteModal"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="PaginationBox">
+                <div class="PaginationRight">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-left"></i> first</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-left"></i> previous</a
+                      >
+                    </li>
+                    <li class="active"><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        next <i class="fa fa-angle-right"> </i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        last <i class="fa fa-angle-double-right"> </i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="PaginationLeft">
+                  <div class="form-group">
+                    <select name="" id="">
+                      <option value="">10</option>
+                      <option value="">20</option>
+                      <option value="">30</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="serivces-Advertisments">
+            <div class="Small-Wrapper">
+              <div class="TitleBox">
+                <h4 class="Title">Advertisements</h4>
+              </div>
+              <div class="FilterArea">
+                <div class="FilterLeft">
+                  <div class="form-group">
+                    <label>Search</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search here"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Status</label>
+                    <select class="form-control">
+                      <option>Active</option>
+                      <option>Inactive</option>
+                      <option>Blocked</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="TableList">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Banner ID</th>
+                      <th>Banner Title</th>
+                      <th>Clicks</th>
+                      <th>Views</th>
+                      <th>Enquiries</th>
+                      <th>Action</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>#ID1101</td>
+                      <td>
+                        <a href="Im-advertisement-details-page.html"
+                          >Tractor Ad</a
+                        >
+                      </td>
+                      <td>476</td>
+                      <td>2048</td>
+                      <td>76</td>
+                      <td>
+                        <div class="Actions">
+                          <a class="Green" href="">
+                            <i
+                              class="fa fa-pencil"
+                              aria-hidden="true"
+                              style="margin-right: 10px"
+                            ></i>
+                          </a>
+                          <a
+                            class="Red"
+                            data-toggle="modal"
+                            data-target="#Delete-jd-advertisement"
+                          >
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="Blue">Active</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="PaginationBox">
+                <div class="PaginationRight">
+                  <ul>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-double-left"></i> first</a
+                      >
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);"
+                        ><i class="fa fa-angle-left"></i> previous</a
+                      >
+                    </li>
+                    <li class="active"><a href="javascript:void(0);">1</a></li>
+                    <li><a href="javascript:void(0);">2</a></li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        next <i class="fa fa-angle-right"> </i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);">
+                        last <i class="fa fa-angle-double-right"> </i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="PaginationLeft">
+                  <div class="form-group">
+                    <select name="" id="">
+                      <option value="">10</option>
+                      <option value="">20</option>
+                      <option value="">30</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ModalBox">
+      <div id="LogoutModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="Decline">
+                <a
+                  href="javascript:void(0);"
+                  class="CloseModal"
+                  data-dismiss="modal"
+                  >×</a
+                >
+                <h3>Logout</h3>
+                <p>Are you sure you want to log out?</p>
+                <h4>
+                  <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                  <a href="login.html">Yes</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ModalBox">
+      <div id="Delete-jd-enquiry" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="Decline">
+                <a
+                  href="javascript:void(0);"
+                  class="CloseModal"
+                  data-dismiss="modal"
+                  >×</a
+                >
+                <h3>Delete</h3>
+                <p>Are you sure you want to delete  Enquiry?</p>
+                <h4>
+                  <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                  <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ModalBox">
+      <div id="Delete-jd-advertisement" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="Decline">
+                <a
+                  href="javascript:void(0);"
+                  class="CloseModal"
+                  data-dismiss="modal"
+                  >×</a
+                >
+                <h3>Delete</h3>
+                <p>Are you sure you want to delete  Advertisement?</p>
+                <h4>
+                  <a href="javascript:void(0);" data-dismiss="modal">no</a>
+                  <a href="javascript:void(0);" data-dismiss="modal">Yes</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

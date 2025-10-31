@@ -1,0 +1,155 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  text-decoration: none !important;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+a{
+  text-decoration: none!important;
+}
+
+.card{
+  padding: none !important;
+}
+.card.no-padding {
+  padding: 0 !important;
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 !important;
+  background: transparent;
+  border-radius: 4px;
+  padding: 0px !important;
+}
+
+.breadcrumb-item {
+  margin-right: 5px;
+  color: #261a5d;
+}
+
+.breadcrumb-item a {
+  text-decoration: none;
+  color: grey;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-item::after {
+  content: ">";
+  font-size: 18px;
+  margin-left: 5px;
+  color: #6c757d;
+  font-weight: 700;
+}
+
+.breadcrumb-item:last-child a {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.breadcrumb-item:last-child::after {
+  content: "";
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0px;
+  padding-left: 0px;
+  color: #6c757d;
+  content: none !important;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.breadcrumbs .greyborder {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 15px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 110px;
+}
+
+.breadcrumbs .greyborder .arrow-icon {
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+.breadcrumbs .greyborder p {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5a5a5a;
+}
+
+.SidenavArea ul li a.active {
+  background-color: #f0fdf4;
+  color: #199647 !important;
+  border-radius: 0 7px 7px 0;
+}
+.tickbutton {
+  background-color: green;
+}
+ 
+.crossbutton {
+  background-color: red;
+}
+ select.form-control {
+  appearance: auto;
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  background-color: #fff;
+}

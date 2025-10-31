@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>News</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="LoginArea">
+      <div class="LoginBox">
+        <div class="LoginLeft">
+          <p class="heading mb-4">Resend Verification Email</p>
+
+          <form>
+            <div class="form-group">
+              <label>New Password*</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Enter New Password"
+              />
+              <span class="Icon"><i class="fa fa-unlock-alt"></i></span>
+              <span class="icon"
+                ><i class="fa fa-eye-slash" aria-hidden="true"></i
+              ></span>
+            </div>
+            <div class="form-group">
+              <label>Confirm Password*</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Confirm Password"
+              />
+              <span class="Icon"><i class="fa fa-unlock-alt"></i></span>
+              <span class="icon"
+                ><i class="fa fa-eye-slash" aria-hidden="true"></i
+              ></span>
+            </div>
+
+            <div class="pswd-validations">
+              <p>
+                <i class="fa fa-check" aria-hidden="true"></i> At least 8
+                characters
+              </p>
+              <p>
+                <i class="fa fa-times" aria-hidden="true"></i> One uppercase
+                letter
+              </p>
+              <p>
+                <i class="fa fa-times" aria-hidden="true"></i> One lowercase
+                letter
+              </p>
+              <p><i class="fa fa-times" aria-hidden="true"></i> One number</p>
+              <p>
+                <i class="fa fa-times" aria-hidden="true"></i> One special
+                character(!@#$%^&*(),.?/'', <> )
+              </p>
+            </div>
+
+            <!-- <button class="Login">Submit</button>  -->
+            <a class="Login" href="login-success.html">Update Password</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
